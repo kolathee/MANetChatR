@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9EA52A51E6DC7C300F8EBC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EA52A41E6DC7C300F8EBC6 /* AppDelegate.swift */; };
+		F9EA52A71E6DC7C300F8EBC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EA52A61E6DC7C300F8EBC6 /* ViewController.swift */; };
+		F9EA52AA1E6DC7C300F8EBC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9EA52A81E6DC7C300F8EBC6 /* Main.storyboard */; };
+		F9EA52AD1E6DC7C300F8EBC6 /* MANetChatR.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9EA52AB1E6DC7C300F8EBC6 /* MANetChatR.xcdatamodeld */; };
+		F9EA52AF1E6DC7C300F8EBC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9EA52AE1E6DC7C300F8EBC6 /* Assets.xcassets */; };
+		F9EA52B21E6DC7C300F8EBC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9EA52B01E6DC7C300F8EBC6 /* LaunchScreen.storyboard */; };
+		F9EA52BD1E6DC7C500F8EBC6 /* MANetChatRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EA52BC1E6DC7C500F8EBC6 /* MANetChatRTests.swift */; };
+		F9EA52C81E6DC7C500F8EBC6 /* MANetChatRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EA52C71E6DC7C500F8EBC6 /* MANetChatRUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9EA52B91E6DC7C500F8EBC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9EA52991E6DC7C300F8EBC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9EA52A01E6DC7C300F8EBC6;
+			remoteInfo = MANetChatR;
+		};
+		F9EA52C41E6DC7C500F8EBC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9EA52991E6DC7C300F8EBC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9EA52A01E6DC7C300F8EBC6;
+			remoteInfo = MANetChatR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F9EA52A11E6DC7C300F8EBC6 /* MANetChatR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MANetChatR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9EA52A41E6DC7C300F8EBC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9EA52A61E6DC7C300F8EBC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9EA52A91E6DC7C300F8EBC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9EA52AC1E6DC7C300F8EBC6 /* MANetChatR.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MANetChatR.xcdatamodel; sourceTree = "<group>"; };
+		F9EA52AE1E6DC7C300F8EBC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9EA52B11E6DC7C300F8EBC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9EA52B31E6DC7C300F8EBC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9EA52B81E6DC7C500F8EBC6 /* MANetChatRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MANetChatRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9EA52BC1E6DC7C500F8EBC6 /* MANetChatRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MANetChatRTests.swift; sourceTree = "<group>"; };
+		F9EA52BE1E6DC7C500F8EBC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9EA52C31E6DC7C500F8EBC6 /* MANetChatRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MANetChatRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9EA52C71E6DC7C500F8EBC6 /* MANetChatRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MANetChatRUITests.swift; sourceTree = "<group>"; };
+		F9EA52C91E6DC7C500F8EBC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9EA529E1E6DC7C300F8EBC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9EA52B51E6DC7C500F8EBC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9EA52C01E6DC7C500F8EBC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9EA52981E6DC7C200F8EBC6 = {
+			isa = PBXGroup;
+			children = (
+				F9EA52A31E6DC7C300F8EBC6 /* MANetChatR */,
+				F9EA52BB1E6DC7C500F8EBC6 /* MANetChatRTests */,
+				F9EA52C61E6DC7C500F8EBC6 /* MANetChatRUITests */,
+				F9EA52A21E6DC7C300F8EBC6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9EA52A21E6DC7C300F8EBC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9EA52A11E6DC7C300F8EBC6 /* MANetChatR.app */,
+				F9EA52B81E6DC7C500F8EBC6 /* MANetChatRTests.xctest */,
+				F9EA52C31E6DC7C500F8EBC6 /* MANetChatRUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9EA52A31E6DC7C300F8EBC6 /* MANetChatR */ = {
+			isa = PBXGroup;
+			children = (
+				F9EA52A41E6DC7C300F8EBC6 /* AppDelegate.swift */,
+				F9EA52A61E6DC7C300F8EBC6 /* ViewController.swift */,
+				F9EA52A81E6DC7C300F8EBC6 /* Main.storyboard */,
+				F9EA52AE1E6DC7C300F8EBC6 /* Assets.xcassets */,
+				F9EA52B01E6DC7C300F8EBC6 /* LaunchScreen.storyboard */,
+				F9EA52B31E6DC7C300F8EBC6 /* Info.plist */,
+				F9EA52AB1E6DC7C300F8EBC6 /* MANetChatR.xcdatamodeld */,
+			);
+			path = MANetChatR;
+			sourceTree = "<group>";
+		};
+		F9EA52BB1E6DC7C500F8EBC6 /* MANetChatRTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9EA52BC1E6DC7C500F8EBC6 /* MANetChatRTests.swift */,
+				F9EA52BE1E6DC7C500F8EBC6 /* Info.plist */,
+			);
+			path = MANetChatRTests;
+			sourceTree = "<group>";
+		};
+		F9EA52C61E6DC7C500F8EBC6 /* MANetChatRUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F9EA52C71E6DC7C500F8EBC6 /* MANetChatRUITests.swift */,
+				F9EA52C91E6DC7C500F8EBC6 /* Info.plist */,
+			);
+			path = MANetChatRUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9EA52A01E6DC7C300F8EBC6 /* MANetChatR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9EA52CC1E6DC7C500F8EBC6 /* Build configuration list for PBXNativeTarget "MANetChatR" */;
+			buildPhases = (
+				F9EA529D1E6DC7C300F8EBC6 /* Sources */,
+				F9EA529E1E6DC7C300F8EBC6 /* Frameworks */,
+				F9EA529F1E6DC7C300F8EBC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MANetChatR;
+			productName = MANetChatR;
+			productReference = F9EA52A11E6DC7C300F8EBC6 /* MANetChatR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9EA52B71E6DC7C500F8EBC6 /* MANetChatRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9EA52CF1E6DC7C500F8EBC6 /* Build configuration list for PBXNativeTarget "MANetChatRTests" */;
+			buildPhases = (
+				F9EA52B41E6DC7C500F8EBC6 /* Sources */,
+				F9EA52B51E6DC7C500F8EBC6 /* Frameworks */,
+				F9EA52B61E6DC7C500F8EBC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9EA52BA1E6DC7C500F8EBC6 /* PBXTargetDependency */,
+			);
+			name = MANetChatRTests;
+			productName = MANetChatRTests;
+			productReference = F9EA52B81E6DC7C500F8EBC6 /* MANetChatRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F9EA52C21E6DC7C500F8EBC6 /* MANetChatRUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9EA52D21E6DC7C500F8EBC6 /* Build configuration list for PBXNativeTarget "MANetChatRUITests" */;
+			buildPhases = (
+				F9EA52BF1E6DC7C500F8EBC6 /* Sources */,
+				F9EA52C01E6DC7C500F8EBC6 /* Frameworks */,
+				F9EA52C11E6DC7C500F8EBC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9EA52C51E6DC7C500F8EBC6 /* PBXTargetDependency */,
+			);
+			name = MANetChatRUITests;
+			productName = MANetChatRUITests;
+			productReference = F9EA52C31E6DC7C500F8EBC6 /* MANetChatRUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9EA52991E6DC7C300F8EBC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = kolathee;
+				TargetAttributes = {
+					F9EA52A01E6DC7C300F8EBC6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DZ3FYPCUHX;
+						ProvisioningStyle = Automatic;
+					};
+					F9EA52B71E6DC7C500F8EBC6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DZ3FYPCUHX;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F9EA52A01E6DC7C300F8EBC6;
+					};
+					F9EA52C21E6DC7C500F8EBC6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DZ3FYPCUHX;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F9EA52A01E6DC7C300F8EBC6;
+					};
+				};
+			};
+			buildConfigurationList = F9EA529C1E6DC7C300F8EBC6 /* Build configuration list for PBXProject "MANetChatR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9EA52981E6DC7C200F8EBC6;
+			productRefGroup = F9EA52A21E6DC7C300F8EBC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9EA52A01E6DC7C300F8EBC6 /* MANetChatR */,
+				F9EA52B71E6DC7C500F8EBC6 /* MANetChatRTests */,
+				F9EA52C21E6DC7C500F8EBC6 /* MANetChatRUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9EA529F1E6DC7C300F8EBC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9EA52B21E6DC7C300F8EBC6 /* LaunchScreen.storyboard in Resources */,
+				F9EA52AF1E6DC7C300F8EBC6 /* Assets.xcassets in Resources */,
+				F9EA52AA1E6DC7C300F8EBC6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9EA52B61E6DC7C500F8EBC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9EA52C11E6DC7C500F8EBC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9EA529D1E6DC7C300F8EBC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9EA52AD1E6DC7C300F8EBC6 /* MANetChatR.xcdatamodeld in Sources */,
+				F9EA52A71E6DC7C300F8EBC6 /* ViewController.swift in Sources */,
+				F9EA52A51E6DC7C300F8EBC6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9EA52B41E6DC7C500F8EBC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9EA52BD1E6DC7C500F8EBC6 /* MANetChatRTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9EA52BF1E6DC7C500F8EBC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9EA52C81E6DC7C500F8EBC6 /* MANetChatRUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9EA52BA1E6DC7C500F8EBC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9EA52A01E6DC7C300F8EBC6 /* MANetChatR */;
+			targetProxy = F9EA52B91E6DC7C500F8EBC6 /* PBXContainerItemProxy */;
+		};
+		F9EA52C51E6DC7C500F8EBC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9EA52A01E6DC7C300F8EBC6 /* MANetChatR */;
+			targetProxy = F9EA52C41E6DC7C500F8EBC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F9EA52A81E6DC7C300F8EBC6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9EA52A91E6DC7C300F8EBC6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9EA52B01E6DC7C300F8EBC6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9EA52B11E6DC7C300F8EBC6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9EA52CA1E6DC7C500F8EBC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9EA52CB1E6DC7C500F8EBC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9EA52CD1E6DC7C500F8EBC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DZ3FYPCUHX;
+				INFOPLIST_FILE = MANetChatR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kolathee.MANetChatR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F9EA52CE1E6DC7C500F8EBC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DZ3FYPCUHX;
+				INFOPLIST_FILE = MANetChatR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kolathee.MANetChatR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F9EA52D01E6DC7C500F8EBC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DZ3FYPCUHX;
+				INFOPLIST_FILE = MANetChatRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kolathee.MANetChatRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MANetChatR.app/MANetChatR";
+			};
+			name = Debug;
+		};
+		F9EA52D11E6DC7C500F8EBC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DZ3FYPCUHX;
+				INFOPLIST_FILE = MANetChatRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kolathee.MANetChatRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MANetChatR.app/MANetChatR";
+			};
+			name = Release;
+		};
+		F9EA52D31E6DC7C500F8EBC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DZ3FYPCUHX;
+				INFOPLIST_FILE = MANetChatRUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kolathee.MANetChatRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MANetChatR;
+			};
+			name = Debug;
+		};
+		F9EA52D41E6DC7C500F8EBC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DZ3FYPCUHX;
+				INFOPLIST_FILE = MANetChatRUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kolathee.MANetChatRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MANetChatR;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9EA529C1E6DC7C300F8EBC6 /* Build configuration list for PBXProject "MANetChatR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9EA52CA1E6DC7C500F8EBC6 /* Debug */,
+				F9EA52CB1E6DC7C500F8EBC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9EA52CC1E6DC7C500F8EBC6 /* Build configuration list for PBXNativeTarget "MANetChatR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9EA52CD1E6DC7C500F8EBC6 /* Debug */,
+				F9EA52CE1E6DC7C500F8EBC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F9EA52CF1E6DC7C500F8EBC6 /* Build configuration list for PBXNativeTarget "MANetChatRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9EA52D01E6DC7C500F8EBC6 /* Debug */,
+				F9EA52D11E6DC7C500F8EBC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F9EA52D21E6DC7C500F8EBC6 /* Build configuration list for PBXNativeTarget "MANetChatRUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9EA52D31E6DC7C500F8EBC6 /* Debug */,
+				F9EA52D41E6DC7C500F8EBC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F9EA52AB1E6DC7C300F8EBC6 /* MANetChatR.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F9EA52AC1E6DC7C300F8EBC6 /* MANetChatR.xcdatamodel */,
+			);
+			currentVersion = F9EA52AC1E6DC7C300F8EBC6 /* MANetChatR.xcdatamodel */;
+			path = MANetChatR.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F9EA52991E6DC7C300F8EBC6 /* Project object */;
+}
