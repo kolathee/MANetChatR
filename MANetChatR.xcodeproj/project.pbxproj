@@ -7,14 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A1D27AE9504CB9608FAA6AC /* Pods_MANetChatR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31B5ED52E725E9C8B617982 /* Pods_MANetChatR.framework */; };
+		CEB9239CC3C1269CEC237D75 /* Pods_MANetChatRUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8DBA2028D1D619B7E532C1 /* Pods_MANetChatRUITests.framework */; };
+		F0E33C5CB31286CB7C769653 /* Pods_MANetChatRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB86B4C2F5075A51B36A8335 /* Pods_MANetChatRTests.framework */; };
+		F919516E1E6DD7CD00871D8E /* TabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F919516D1E6DD7CD00871D8E /* TabBarC.swift */; };
+		F91951701E6DD7FF00871D8E /* NoticesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F919516F1E6DD7FF00871D8E /* NoticesVC.swift */; };
+		F91951721E6DD84900871D8E /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91951711E6DD84900871D8E /* SettingVC.swift */; };
+		F91951741E6DD85D00871D8E /* NotiMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91951731E6DD85D00871D8E /* NotiMapVC.swift */; };
+		F91951771E6DD8E800871D8E /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91951761E6DD8E800871D8E /* AlertVC.swift */; };
 		F9EA52A51E6DC7C300F8EBC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EA52A41E6DC7C300F8EBC6 /* AppDelegate.swift */; };
-		F9EA52A71E6DC7C300F8EBC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EA52A61E6DC7C300F8EBC6 /* ViewController.swift */; };
 		F9EA52AA1E6DC7C300F8EBC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9EA52A81E6DC7C300F8EBC6 /* Main.storyboard */; };
 		F9EA52AD1E6DC7C300F8EBC6 /* MANetChatR.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9EA52AB1E6DC7C300F8EBC6 /* MANetChatR.xcdatamodeld */; };
 		F9EA52AF1E6DC7C300F8EBC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9EA52AE1E6DC7C300F8EBC6 /* Assets.xcassets */; };
 		F9EA52B21E6DC7C300F8EBC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9EA52B01E6DC7C300F8EBC6 /* LaunchScreen.storyboard */; };
 		F9EA52BD1E6DC7C500F8EBC6 /* MANetChatRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EA52BC1E6DC7C500F8EBC6 /* MANetChatRTests.swift */; };
 		F9EA52C81E6DC7C500F8EBC6 /* MANetChatRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EA52C71E6DC7C500F8EBC6 /* MANetChatRUITests.swift */; };
+		F9EA52DA1E6DCB3900F8EBC6 /* NoticeCViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EA52D91E6DCB3900F8EBC6 /* NoticeCViewCell.swift */; };
+		F9EA52DE1E6DCB8600F8EBC6 /* TextDetailDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EA52DD1E6DCB8600F8EBC6 /* TextDetailDelegate.swift */; };
+		F9EA52E01E6DCBC200F8EBC6 /* PinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EA52DF1E6DCBC200F8EBC6 /* PinAnnotation.swift */; };
+		F9EA52E21E6DCBFA00F8EBC6 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EA52E11E6DCBFA00F8EBC6 /* Pin.swift */; };
+		F9EA52E41E6DCC1A00F8EBC6 /* Victim.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EA52E31E6DCC1A00F8EBC6 /* Victim.swift */; };
+		F9EA52E61E6DCDE000F8EBC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9EA52E51E6DCDE000F8EBC6 /* GoogleService-Info.plist */; };
+		F9EA52E81E6DD46200F8EBC6 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EA52E71E6DD46200F8EBC6 /* LoginVC.swift */; };
+		F9EA52EA1E6DD4E500F8EBC6 /* AddNoticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EA52E91E6DD4E500F8EBC6 /* AddNoticeVC.swift */; };
+		F9EA52EC1E6DD51B00F8EBC6 /* NoticeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EA52EB1E6DD51B00F8EBC6 /* NoticeDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +51,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45909984840F0B2398B8269A /* Pods-MANetChatRUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MANetChatRUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MANetChatRUITests/Pods-MANetChatRUITests.release.xcconfig"; sourceTree = "<group>"; };
+		49375612BB16D9675EBA7270 /* Pods-MANetChatRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MANetChatRTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MANetChatRTests/Pods-MANetChatRTests.debug.xcconfig"; sourceTree = "<group>"; };
+		652BC5F48354D63DC66602D5 /* Pods-MANetChatR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MANetChatR.release.xcconfig"; path = "Pods/Target Support Files/Pods-MANetChatR/Pods-MANetChatR.release.xcconfig"; sourceTree = "<group>"; };
+		6C8DBA2028D1D619B7E532C1 /* Pods_MANetChatRUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MANetChatRUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD6D3CD92CC75C5AC2AEB5C /* Pods-MANetChatRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MANetChatRTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MANetChatRTests/Pods-MANetChatRTests.release.xcconfig"; sourceTree = "<group>"; };
+		AB86B4C2F5075A51B36A8335 /* Pods_MANetChatRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MANetChatRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB92683275F69FF8F9211716 /* Pods-MANetChatRUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MANetChatRUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MANetChatRUITests/Pods-MANetChatRUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C31B5ED52E725E9C8B617982 /* Pods_MANetChatR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MANetChatR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C575DDC62229DE491C625F83 /* Pods-MANetChatR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MANetChatR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MANetChatR/Pods-MANetChatR.debug.xcconfig"; sourceTree = "<group>"; };
+		F919516D1E6DD7CD00871D8E /* TabBarC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarC.swift; sourceTree = "<group>"; };
+		F919516F1E6DD7FF00871D8E /* NoticesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticesVC.swift; sourceTree = "<group>"; };
+		F91951711E6DD84900871D8E /* SettingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		F91951731E6DD85D00871D8E /* NotiMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotiMapVC.swift; sourceTree = "<group>"; };
+		F91951761E6DD8E800871D8E /* AlertVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
+		F91951781E6DD91D00871D8E /* MANetChatR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MANetChatR-Bridging-Header.h"; sourceTree = "<group>"; };
 		F9EA52A11E6DC7C300F8EBC6 /* MANetChatR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MANetChatR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9EA52A41E6DC7C300F8EBC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F9EA52A61E6DC7C300F8EBC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F9EA52A91E6DC7C300F8EBC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9EA52AC1E6DC7C300F8EBC6 /* MANetChatR.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MANetChatR.xcdatamodel; sourceTree = "<group>"; };
 		F9EA52AE1E6DC7C300F8EBC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +79,15 @@
 		F9EA52C31E6DC7C500F8EBC6 /* MANetChatRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MANetChatRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9EA52C71E6DC7C500F8EBC6 /* MANetChatRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MANetChatRUITests.swift; sourceTree = "<group>"; };
 		F9EA52C91E6DC7C500F8EBC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9EA52D91E6DCB3900F8EBC6 /* NoticeCViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeCViewCell.swift; sourceTree = "<group>"; };
+		F9EA52DD1E6DCB8600F8EBC6 /* TextDetailDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextDetailDelegate.swift; sourceTree = "<group>"; };
+		F9EA52DF1E6DCBC200F8EBC6 /* PinAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinAnnotation.swift; sourceTree = "<group>"; };
+		F9EA52E11E6DCBFA00F8EBC6 /* Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
+		F9EA52E31E6DCC1A00F8EBC6 /* Victim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Victim.swift; sourceTree = "<group>"; };
+		F9EA52E51E6DCDE000F8EBC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F9EA52E71E6DD46200F8EBC6 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F9EA52E91E6DD4E500F8EBC6 /* AddNoticeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoticeVC.swift; sourceTree = "<group>"; };
+		F9EA52EB1E6DD51B00F8EBC6 /* NoticeDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1D27AE9504CB9608FAA6AC /* Pods_MANetChatR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0E33C5CB31286CB7C769653 /* Pods_MANetChatRTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +111,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB9239CC3C1269CEC237D75 /* Pods_MANetChatRUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E3F0530794BE1D884D0A8A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C31B5ED52E725E9C8B617982 /* Pods_MANetChatR.framework */,
+				AB86B4C2F5075A51B36A8335 /* Pods_MANetChatRTests.framework */,
+				6C8DBA2028D1D619B7E532C1 /* Pods_MANetChatRUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5828CED75E7C4F564117C1E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C575DDC62229DE491C625F83 /* Pods-MANetChatR.debug.xcconfig */,
+				652BC5F48354D63DC66602D5 /* Pods-MANetChatR.release.xcconfig */,
+				49375612BB16D9675EBA7270 /* Pods-MANetChatRTests.debug.xcconfig */,
+				AAD6D3CD92CC75C5AC2AEB5C /* Pods-MANetChatRTests.release.xcconfig */,
+				AB92683275F69FF8F9211716 /* Pods-MANetChatRUITests.debug.xcconfig */,
+				45909984840F0B2398B8269A /* Pods-MANetChatRUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F919517B1E6DD99200871D8E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F9EA52A41E6DC7C300F8EBC6 /* AppDelegate.swift */,
+				F9EA52AE1E6DC7C300F8EBC6 /* Assets.xcassets */,
+				F9EA52B01E6DC7C300F8EBC6 /* LaunchScreen.storyboard */,
+				F9EA52B31E6DC7C300F8EBC6 /* Info.plist */,
+				F9EA52AB1E6DC7C300F8EBC6 /* MANetChatR.xcdatamodeld */,
+				F9EA52E51E6DCDE000F8EBC6 /* GoogleService-Info.plist */,
+				F91951781E6DD91D00871D8E /* MANetChatR-Bridging-Header.h */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		F9EA52981E6DC7C200F8EBC6 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +162,8 @@
 				F9EA52BB1E6DC7C500F8EBC6 /* MANetChatRTests */,
 				F9EA52C61E6DC7C500F8EBC6 /* MANetChatRUITests */,
 				F9EA52A21E6DC7C300F8EBC6 /* Products */,
+				5828CED75E7C4F564117C1E1 /* Pods */,
+				4E3F0530794BE1D884D0A8A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +180,12 @@
 		F9EA52A31E6DC7C300F8EBC6 /* MANetChatR */ = {
 			isa = PBXGroup;
 			children = (
-				F9EA52A41E6DC7C300F8EBC6 /* AppDelegate.swift */,
-				F9EA52A61E6DC7C300F8EBC6 /* ViewController.swift */,
 				F9EA52A81E6DC7C300F8EBC6 /* Main.storyboard */,
-				F9EA52AE1E6DC7C300F8EBC6 /* Assets.xcassets */,
-				F9EA52B01E6DC7C300F8EBC6 /* LaunchScreen.storyboard */,
-				F9EA52B31E6DC7C300F8EBC6 /* Info.plist */,
-				F9EA52AB1E6DC7C300F8EBC6 /* MANetChatR.xcdatamodeld */,
+				F9EA52D81E6DCA3700F8EBC6 /* Controllers */,
+				F9EA52D71E6DCA3200F8EBC6 /* Models */,
+				F9EA52D61E6DCA2C00F8EBC6 /* Delegates */,
+				F9EA52D51E6DCA1C00F8EBC6 /* Views */,
+				F919517B1E6DD99200871D8E /* Settings */,
 			);
 			path = MANetChatR;
 			sourceTree = "<group>";
@@ -128,6 +208,47 @@
 			path = MANetChatRUITests;
 			sourceTree = "<group>";
 		};
+		F9EA52D51E6DCA1C00F8EBC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F9EA52D91E6DCB3900F8EBC6 /* NoticeCViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F9EA52D61E6DCA2C00F8EBC6 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				F9EA52DD1E6DCB8600F8EBC6 /* TextDetailDelegate.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		F9EA52D71E6DCA3200F8EBC6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F9EA52DF1E6DCBC200F8EBC6 /* PinAnnotation.swift */,
+				F9EA52E11E6DCBFA00F8EBC6 /* Pin.swift */,
+				F9EA52E31E6DCC1A00F8EBC6 /* Victim.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F9EA52D81E6DCA3700F8EBC6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F9EA52E71E6DD46200F8EBC6 /* LoginVC.swift */,
+				F9EA52E91E6DD4E500F8EBC6 /* AddNoticeVC.swift */,
+				F9EA52EB1E6DD51B00F8EBC6 /* NoticeDetailVC.swift */,
+				F919516D1E6DD7CD00871D8E /* TabBarC.swift */,
+				F91951761E6DD8E800871D8E /* AlertVC.swift */,
+				F919516F1E6DD7FF00871D8E /* NoticesVC.swift */,
+				F91951711E6DD84900871D8E /* SettingVC.swift */,
+				F91951731E6DD85D00871D8E /* NotiMapVC.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +256,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9EA52CC1E6DC7C500F8EBC6 /* Build configuration list for PBXNativeTarget "MANetChatR" */;
 			buildPhases = (
+				97EFA01F8CA3456A3E16F3D0 /* [CP] Check Pods Manifest.lock */,
 				F9EA529D1E6DC7C300F8EBC6 /* Sources */,
 				F9EA529E1E6DC7C300F8EBC6 /* Frameworks */,
 				F9EA529F1E6DC7C300F8EBC6 /* Resources */,
+				BE47C5C53DE84741CB7DD007 /* [CP] Embed Pods Frameworks */,
+				8FD9AEFC79A19F07A3E31EE0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +276,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9EA52CF1E6DC7C500F8EBC6 /* Build configuration list for PBXNativeTarget "MANetChatRTests" */;
 			buildPhases = (
+				2DC344F454E7983A61D97DCB /* [CP] Check Pods Manifest.lock */,
 				F9EA52B41E6DC7C500F8EBC6 /* Sources */,
 				F9EA52B51E6DC7C500F8EBC6 /* Frameworks */,
 				F9EA52B61E6DC7C500F8EBC6 /* Resources */,
+				70125B3E84731C442354BE18 /* [CP] Embed Pods Frameworks */,
+				FE29910BD9829A0C8BFA22D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +297,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9EA52D21E6DC7C500F8EBC6 /* Build configuration list for PBXNativeTarget "MANetChatRUITests" */;
 			buildPhases = (
+				9A8A15244D8E6601702FCB33 /* [CP] Check Pods Manifest.lock */,
 				F9EA52BF1E6DC7C500F8EBC6 /* Sources */,
 				F9EA52C01E6DC7C500F8EBC6 /* Frameworks */,
 				F9EA52C11E6DC7C500F8EBC6 /* Resources */,
+				F6AE66F8A1B00D52049D6467 /* [CP] Embed Pods Frameworks */,
+				61BC598D9C76714F41999095 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,6 +327,7 @@
 					F9EA52A01E6DC7C300F8EBC6 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = DZ3FYPCUHX;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					F9EA52B71E6DC7C500F8EBC6 = {
@@ -239,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9EA52B21E6DC7C300F8EBC6 /* LaunchScreen.storyboard in Resources */,
+				F9EA52E61E6DCDE000F8EBC6 /* GoogleService-Info.plist in Resources */,
 				F9EA52AF1E6DC7C300F8EBC6 /* Assets.xcassets in Resources */,
 				F9EA52AA1E6DC7C300F8EBC6 /* Main.storyboard in Resources */,
 			);
@@ -260,14 +392,164 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2DC344F454E7983A61D97DCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		61BC598D9C76714F41999095 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MANetChatRUITests/Pods-MANetChatRUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70125B3E84731C442354BE18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MANetChatRTests/Pods-MANetChatRTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FD9AEFC79A19F07A3E31EE0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MANetChatR/Pods-MANetChatR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97EFA01F8CA3456A3E16F3D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9A8A15244D8E6601702FCB33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BE47C5C53DE84741CB7DD007 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MANetChatR/Pods-MANetChatR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6AE66F8A1B00D52049D6467 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MANetChatRUITests/Pods-MANetChatRUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE29910BD9829A0C8BFA22D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MANetChatRTests/Pods-MANetChatRTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F9EA529D1E6DC7C300F8EBC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9EA52EC1E6DD51B00F8EBC6 /* NoticeDetailVC.swift in Sources */,
+				F91951721E6DD84900871D8E /* SettingVC.swift in Sources */,
+				F9EA52E21E6DCBFA00F8EBC6 /* Pin.swift in Sources */,
+				F9EA52DA1E6DCB3900F8EBC6 /* NoticeCViewCell.swift in Sources */,
 				F9EA52AD1E6DC7C300F8EBC6 /* MANetChatR.xcdatamodeld in Sources */,
-				F9EA52A71E6DC7C300F8EBC6 /* ViewController.swift in Sources */,
+				F9EA52E41E6DCC1A00F8EBC6 /* Victim.swift in Sources */,
+				F9EA52EA1E6DD4E500F8EBC6 /* AddNoticeVC.swift in Sources */,
+				F919516E1E6DD7CD00871D8E /* TabBarC.swift in Sources */,
+				F91951771E6DD8E800871D8E /* AlertVC.swift in Sources */,
+				F9EA52E81E6DD46200F8EBC6 /* LoginVC.swift in Sources */,
 				F9EA52A51E6DC7C300F8EBC6 /* AppDelegate.swift in Sources */,
+				F9EA52E01E6DCBC200F8EBC6 /* PinAnnotation.swift in Sources */,
+				F91951741E6DD85D00871D8E /* NotiMapVC.swift in Sources */,
+				F9EA52DE1E6DCB8600F8EBC6 /* TextDetailDelegate.swift in Sources */,
+				F91951701E6DD7FF00871D8E /* NoticesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,32 +699,40 @@
 		};
 		F9EA52CD1E6DC7C500F8EBC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C575DDC62229DE491C625F83 /* Pods-MANetChatR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = DZ3FYPCUHX;
 				INFOPLIST_FILE = MANetChatR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kolathee.MANetChatR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MANetChatR/MANetChatR-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		F9EA52CE1E6DC7C500F8EBC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 652BC5F48354D63DC66602D5 /* Pods-MANetChatR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = DZ3FYPCUHX;
 				INFOPLIST_FILE = MANetChatR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kolathee.MANetChatR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MANetChatR/MANetChatR-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		F9EA52D01E6DC7C500F8EBC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49375612BB16D9675EBA7270 /* Pods-MANetChatRTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -458,6 +748,7 @@
 		};
 		F9EA52D11E6DC7C500F8EBC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAD6D3CD92CC75C5AC2AEB5C /* Pods-MANetChatRTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -473,6 +764,7 @@
 		};
 		F9EA52D31E6DC7C500F8EBC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB92683275F69FF8F9211716 /* Pods-MANetChatRUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = DZ3FYPCUHX;
@@ -487,6 +779,7 @@
 		};
 		F9EA52D41E6DC7C500F8EBC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45909984840F0B2398B8269A /* Pods-MANetChatRUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = DZ3FYPCUHX;
@@ -518,6 +811,7 @@
 				F9EA52CE1E6DC7C500F8EBC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9EA52CF1E6DC7C500F8EBC6 /* Build configuration list for PBXNativeTarget "MANetChatRTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +820,7 @@
 				F9EA52D11E6DC7C500F8EBC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9EA52D21E6DC7C500F8EBC6 /* Build configuration list for PBXNativeTarget "MANetChatRUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +829,7 @@
 				F9EA52D41E6DC7C500F8EBC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
