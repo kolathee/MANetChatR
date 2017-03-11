@@ -1,4 +1,5 @@
 # Mobile Ad-hoc Network Chat Application (Recuser)
+Developing ...
 
 ![My image](https://github.com/kolathee/images/blob/master/Prototypes/MANetChatR/image19.png)
 ![My image](https://github.com/kolathee/images/blob/master/Prototypes/MANetChatR/image20.png)
