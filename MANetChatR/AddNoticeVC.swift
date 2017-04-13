@@ -78,7 +78,9 @@ class AddNoticeVC: UIViewController, UITextViewDelegate {
     
     @IBAction func doneButtonWasTapped(_ sender: Any) {
         let noticeId = noticesRef.childByAutoId().key
-        noticesRef.child(noticeId).setValue([inputTitleTextBox.text,inputDetailTextBox.text,FIRServerValue.timestamp()])
+        noticesRef.child(noticeId).setValue(["title":inputTitleTextBox.text,
+                                             "detail":inputDetailTextBox.text,
+                                             "postedDate":FIRServerValue.timestamp()])
         dismiss(animated: true, completion: nil)
     }
 

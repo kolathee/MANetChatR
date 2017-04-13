@@ -12,12 +12,13 @@ import FirebaseDatabase
 class NoticesVC: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let noticeRef = FIRDatabase.database().reference(withPath: "notices")
+    let noticeRef = FIRDatabase.database().reference().child("notices").queryOrdered(byChild: "postedDate")
     
     struct Notice {
         let noticeId:String
         let title:String
         let detail:String
+        let postedDate:Int
     }
     
     var indexCollectionSelected:Int?
@@ -31,11 +32,19 @@ class NoticesVC: UIViewController,UICollectionViewDataSource,UICollectionViewDel
     func setup(){
         noticeRef.observe(.value, with: { (snapshot) in
             self.notices.removeAll()
-            if let data = snapshot.value as? Dictionary<String,Array<String>>{
-                print("HI")
-                for (key,information) in data {
-                    let notice = Notice(noticeId: key, title: information[0], detail: information[1])
-                    self.notices.append(notice)
+            if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot]{
+                print(snapshot)
+                for snap in snapshot {
+                    if let notice = snap.value as? [String:AnyObject] {
+                            let notice = Notice(noticeId: snap.key,
+                                                title: notice[ "title" ] as! String,
+                                                detail: notice[ "detail" ] as! String,
+                                                postedDate: notice["postedDate"] as! Int
+                                                )
+                            self.notices.append(notice)
+                            print(self.notices[self.notices.count-1].title)
+                            print(self.notices[self.notices.count-1].detail)
+                    }
                 }
             }
             print("*****")
@@ -51,7 +60,7 @@ class NoticesVC: UIViewController,UICollectionViewDataSource,UICollectionViewDel
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let notice = notices[indexPath.row]
-        
+
         collectionView.backgroundColor = UIColor(red:0.95, green:0.95, blue:0.95, alpha:1.0)
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "noticeCollectionCell", for: indexPath) as! NoticeCViewCell
         cell.title.text = notice.title

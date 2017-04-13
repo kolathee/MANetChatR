@@ -9,6 +9,6 @@
 import UIKit
 
 class NoticeCViewCell: UICollectionViewCell {
-    @IBOutlet weak var title: UILabel!
     @IBOutlet weak var detail: UILabel!
+    @IBOutlet weak var title: UILabel!
 }
