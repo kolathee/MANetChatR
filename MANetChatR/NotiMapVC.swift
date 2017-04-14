@@ -72,9 +72,9 @@ class NotiMapVC: UIViewController,UITableViewDelegate,UITableViewDataSource,MKMa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "victimsCell", for: indexPath)
-        cell.textLabel?.text = "\(victims[indexPath.row].name)"
-        cell.contentView.alpha = 0.8
+        let cell = Bundle.main.loadNibNamed("VictimViewCell", owner: self, options: nil)?.first as! VictimViewCell
+        cell.nameLabel.text = "\(victims[indexPath.row].name)"
+        cell.contentView.alpha = 1
         return cell
     }
     
