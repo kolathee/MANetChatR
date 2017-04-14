@@ -828,4 +828,5 @@
         <image name="red_pin" width="25" height="34"/>
         <image name="warnning" width="256" height="256"/>
     </resources>
+    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
