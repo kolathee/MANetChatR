@@ -13,7 +13,7 @@ class NocticesVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     
-    let noticeRef = FIRDatabase.database().reference().child("notices").queryOrdered(byChild: "postedDate")
+    let noticeRef = FIRDatabase.database().reference().child("notices")
     
     struct Notice {
         let noticeId:String
@@ -30,7 +30,7 @@ class NocticesVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     }
     
     func setup(){
-        noticeRef.observe(.value, with: { (snapshot) in
+        noticeRef.queryOrdered(byChild: "postedDate").observe(.value, with: { (snapshot) in
             self.notices.removeAll()
             if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot]{
                 print(snapshot)
@@ -51,7 +51,6 @@ class NocticesVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
             print(self.notices)
             self.tableView.reloadData()
         })
-
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
