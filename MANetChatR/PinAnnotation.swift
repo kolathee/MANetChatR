@@ -21,9 +21,9 @@ class PinAnnotation: NSObject, MKAnnotation {
         self.id = id
         
         if pinType == "red_pin" {
-            title = "warning place!"
+            title = "Warning Place!"
         } else if pinType == "green_pin" {
-            title = "safe place"
+            title = "Safe Place"
         }
     }
     
@@ -32,5 +32,4 @@ class PinAnnotation: NSObject, MKAnnotation {
         self.pinType = "person_pin"
         self.title = username
     }
-
 }

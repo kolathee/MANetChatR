@@ -11,6 +11,8 @@
 		A468EAC61EA0C920007A8391 /* NoticeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A468EAC51EA0C920007A8391 /* NoticeViewCell.swift */; };
 		A468EAC81EA0CC18007A8391 /* NocticesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A468EAC71EA0CC18007A8391 /* NocticesVC.swift */; };
 		A468EACD1EA0F097007A8391 /* VictimViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A468EACB1EA0F097007A8391 /* VictimViewCell.swift */; };
+		A48369621EDB5CE900DD71F0 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48369611EDB5CE900DD71F0 /* Reachability.swift */; };
+		A4D855B91EDD860700B5DA1F /* POP6.WAV in Resources */ = {isa = PBXBuildFile; fileRef = A4D855B81EDD860700B5DA1F /* POP6.WAV */; };
 		CEB9239CC3C1269CEC237D75 /* Pods_MANetChatRUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8DBA2028D1D619B7E532C1 /* Pods_MANetChatRUITests.framework */; };
 		F0E33C5CB31286CB7C769653 /* Pods_MANetChatRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB86B4C2F5075A51B36A8335 /* Pods_MANetChatRTests.framework */; };
 		F919516E1E6DD7CD00871D8E /* TabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F919516D1E6DD7CD00871D8E /* TabBarC.swift */; };
@@ -59,6 +61,8 @@
 		A468EAC51EA0C920007A8391 /* NoticeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeViewCell.swift; sourceTree = "<group>"; };
 		A468EAC71EA0CC18007A8391 /* NocticesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NocticesVC.swift; sourceTree = "<group>"; };
 		A468EACB1EA0F097007A8391 /* VictimViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VictimViewCell.swift; sourceTree = "<group>"; };
+		A48369611EDB5CE900DD71F0 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		A4D855B81EDD860700B5DA1F /* POP6.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = POP6.WAV; sourceTree = "<group>"; };
 		AAD6D3CD92CC75C5AC2AEB5C /* Pods-MANetChatRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MANetChatRTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MANetChatRTests/Pods-MANetChatRTests.release.xcconfig"; sourceTree = "<group>"; };
 		AB86B4C2F5075A51B36A8335 /* Pods_MANetChatRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MANetChatRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB92683275F69FF8F9211716 /* Pods-MANetChatRUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MANetChatRUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MANetChatRUITests/Pods-MANetChatRUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +147,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A48369601EDB5CC200DD71F0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A48369611EDB5CE900DD71F0 /* Reachability.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		F919517B1E6DD99200871D8E /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +172,7 @@
 		F9EA52981E6DC7C200F8EBC6 = {
 			isa = PBXGroup;
 			children = (
+				A4D855B81EDD860700B5DA1F /* POP6.WAV */,
 				F9EA52A31E6DC7C300F8EBC6 /* MANetChatR */,
 				F9EA52BB1E6DC7C500F8EBC6 /* MANetChatRTests */,
 				F9EA52C61E6DC7C500F8EBC6 /* MANetChatRUITests */,
@@ -183,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				F9EA52A81E6DC7C300F8EBC6 /* Main.storyboard */,
+				A48369601EDB5CC200DD71F0 /* Services */,
 				F9EA52D81E6DCA3700F8EBC6 /* Controllers */,
 				F9EA52D71E6DCA3200F8EBC6 /* Models */,
 				F9EA52D61E6DCA2C00F8EBC6 /* Delegates */,
@@ -375,6 +389,7 @@
 				F9EA52B21E6DC7C300F8EBC6 /* LaunchScreen.storyboard in Resources */,
 				F9EA52E61E6DCDE000F8EBC6 /* GoogleService-Info.plist in Resources */,
 				F9EA52AF1E6DC7C300F8EBC6 /* Assets.xcassets in Resources */,
+				A4D855B91EDD860700B5DA1F /* POP6.WAV in Resources */,
 				F9EA52AA1E6DC7C300F8EBC6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -544,6 +559,7 @@
 				F9EA52AD1E6DC7C300F8EBC6 /* MANetChatR.xcdatamodeld in Sources */,
 				F9EA52E41E6DCC1A00F8EBC6 /* Victim.swift in Sources */,
 				F9EA52EA1E6DD4E500F8EBC6 /* AddNoticeVC.swift in Sources */,
+				A48369621EDB5CE900DD71F0 /* Reachability.swift in Sources */,
 				A468EACD1EA0F097007A8391 /* VictimViewCell.swift in Sources */,
 				F919516E1E6DD7CD00871D8E /* TabBarC.swift in Sources */,
 				F91951771E6DD8E800871D8E /* AlertVC.swift in Sources */,

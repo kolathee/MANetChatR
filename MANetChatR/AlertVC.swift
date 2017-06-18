@@ -16,7 +16,9 @@ class AlertVC: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var valueOfStepperLabel: UILabel!
     @IBOutlet weak var centerPinImage: UIImageView!
+    @IBOutlet weak var noInternetConnectionView: UIView!
     
+    @IBOutlet weak var sendAlertButton: UIButton!
     var geoFireRedNoti: GeoFire!
     var geoFireGreenNoti: GeoFire!
     var geoFireVictims: GeoFire!
@@ -29,6 +31,8 @@ class AlertVC: UIViewController, MKMapViewDelegate {
     
     let locationManager = CLLocationManager()
     var mapHasCenteredOnce = false
+    
+    var reachability:Reachability?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,9 +52,22 @@ class AlertVC: UIViewController, MKMapViewDelegate {
         
         mapView.delegate = self
         mapView.userTrackingMode = MKUserTrackingMode.follow
+        
+        do {
+            try reachability = Reachability()
+        } catch let error as NSError {
+            print(error)
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        if (reachability?.isReachable)! {
+            noInternetConnectionView.isHidden = true
+            sendAlertButton.isEnabled = true
+        } else {
+            noInternetConnectionView.isHidden = false
+            sendAlertButton.isEnabled = false
+        }
         locationAuthStatus()
     }
     
@@ -155,7 +172,7 @@ class AlertVC: UIViewController, MKMapViewDelegate {
             if anno.pinType != "person_pin" {
                 let btn = UIButton()
                 btn.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
-                btn.setImage(UIImage(named: "map"), for: .normal)
+                btn.setImage(#imageLiteral(resourceName: "x"), for: .normal)
                 annotationView.rightCalloutAccessoryView = btn
             }
         }
@@ -197,7 +214,6 @@ class AlertVC: UIViewController, MKMapViewDelegate {
         let userLocation = locationManager.location
         centerMapOnLocation(location: userLocation!)
     }
-    
     
     @IBAction func greenButtonTapped(_ sender: Any) {
         centerPinImage.image = UIImage(named:"green_pin")

@@ -1,11 +1,3 @@
-//
-//  LoginVC.swift
-//  MANetChatR
-//
-//  Created by kolathee on 3/7/2560 BE.
-//  Copyright © 2560 kolathee. All rights reserved.
-//
-
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
@@ -14,16 +6,15 @@ class LoginVC: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var inputEmailTextBox: UITextField!
     @IBOutlet weak var inputPasswordTextBox: UITextField!
-    @IBOutlet weak var textValue: UITextField!
     
     var appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textValue.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -90,9 +81,17 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         let tabBarPage = self.storyboard?.instantiateViewController(withIdentifier: "tabBarPage") as! TabBarC
         self.present(tabBarPage, animated: false, completion: nil)
     }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
+
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if string == "\n" {
+            if textField == inputEmailTextBox {
+                inputPasswordTextBox.becomeFirstResponder()
+            } else if textField == inputPasswordTextBox {
+                inputPasswordTextBox.resignFirstResponder()
+                handleLogin()
+            }
+            return false
+        }
         return true
     }
 

@@ -11,8 +11,11 @@ import FirebaseDatabase
 
 class NocticesVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
+    @IBOutlet weak var addButton: UIBarButtonItem!
+    @IBOutlet weak var noInternetConnectionView: UIView!
     @IBOutlet weak var tableView: UITableView!
     
+    var reachability:Reachability?
     let noticeRef = FIRDatabase.database().reference().child("notices")
     
     struct Notice {
@@ -26,7 +29,23 @@ class NocticesVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setup()
+        do {
+            try reachability = Reachability()
+        } catch let error as NSError {
+            print(error)
+        }
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if (reachability?.isReachable)! {
+            noInternetConnectionView.isHidden = true
+            addButton.isEnabled = true
+            setup()
+        } else {
+            noInternetConnectionView.isHidden = false
+            addButton.isEnabled = false
+        }
     }
     
     func setup(){

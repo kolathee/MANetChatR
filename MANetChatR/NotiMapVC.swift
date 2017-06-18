@@ -1,22 +1,19 @@
-//
-//  NotiMapVC.swift
-//  MANetChatR
-//
-//  Created by kolathee on 3/7/2560 BE.
-//  Copyright © 2560 kolathee. All rights reserved.
-//
-
-
 import UIKit
 import FirebaseDatabase
 import GeoFire
+import AudioToolbox
+import AVFoundation
 
 class NotiMapVC: UIViewController,UITableViewDelegate,UITableViewDataSource,MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var noInternetConnectionView: UIView!
     
     var victims = [Victim]()
+    
+    var audioPlayer:AVAudioPlayer!
+    let audioFilePath = Bundle.main.path(forResource: "POP6", ofType: "WAV")
     
     var geoFireRedNoti: GeoFire!
     var geoFireGreenNoti: GeoFire!
@@ -30,6 +27,8 @@ class NotiMapVC: UIViewController,UITableViewDelegate,UITableViewDataSource,MKMa
     
     let locationManager = CLLocationManager()
     var mapHasCenteredOnce = false
+    
+    var reachability : Reachability?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,9 +46,22 @@ class NotiMapVC: UIViewController,UITableViewDelegate,UITableViewDataSource,MKMa
         mapView.userTrackingMode = MKUserTrackingMode.follow
         
         fetchVictimsToArray()
+        
+        do {
+            try reachability = Reachability()
+        } catch let error as NSError {
+            print(error)
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        if (reachability?.isReachable)! {
+            noInternetConnectionView.isHidden = true
+            self.tabBarController?.tabBar.items?.first?.badgeValue = nil
+        } else {
+            noInternetConnectionView.isHidden = false
+        }
+        
         locationAuthStatus()
     }
     
@@ -135,7 +147,6 @@ class NotiMapVC: UIViewController,UITableViewDelegate,UITableViewDataSource,MKMa
                 //                print("Found Green Pin : \(key)")
             }
         })
-        
     }
     
     // Called when annotation is added to mapView.
@@ -200,6 +211,21 @@ class NotiMapVC: UIViewController,UITableViewDelegate,UITableViewDataSource,MKMa
     
     func fetchVictimsToArray(){
         geoFireVictimsRef.observe(.value, with: { (snapshot) in
+            AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
+            self.tabBarController?.tabBar.items?.first?.badgeValue = " "
+            self.showMessage(title: "Warning", message: "Victim Updated")
+            if self.audioFilePath != nil {
+                let audioFileUrl = NSURL.fileURL(withPath: self.audioFilePath!)
+                do {
+                    try self.audioPlayer = AVAudioPlayer(contentsOf: audioFileUrl)
+                } catch {
+                    print("Error")
+                }
+                self.audioPlayer.play()
+            } else {
+                print("audio file is not found")
+            }
+
             self.victims.removeAll()
             if let data = snapshot.value as? Dictionary<String,AnyObject>{
                 for (key,data) in data {
@@ -236,5 +262,12 @@ class NotiMapVC: UIViewController,UITableViewDelegate,UITableViewDataSource,MKMa
         let longtitude = mapView.region.center.longitude
         let location = CLLocation(latitude: latitude, longitude: longtitude)
         showSightingsOnMap(location: location)
+    }
+    
+    func showMessage(title:String , message:String) -> Void {
+        let messageWindows = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "done", style: .cancel, handler: nil)
+        messageWindows.addAction(action)
+        self.present(messageWindows, animated: true, completion: nil)
     }
 }
